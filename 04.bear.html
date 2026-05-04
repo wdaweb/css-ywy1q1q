@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bear {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+
+        .ear-left {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 10px solid black;
+            background: white;
+            position: absolute;
+            left: 5%;
+        }
+
+        .ear-right {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 10px solid black;
+            background: white;
+            position: absolute;
+            right: 5%;
+
+        }
+
+        .eye-left {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 10px solid white;
+            background: black;
+            position: absolute;
+            left: 20%;
+            top: 20%;
+        }
+
+        .eye-right {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 10px solid white;
+            background: black;
+            position: absolute;
+            right: 20%;
+            top: 20%;
+        }
+
+        /* .nose-mouth {
+            width: 135px;
+            height: 100px;
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .nose {
+            width: 40px;
+            height: 30px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+        .mouth {
+            width: 80px;
+            height: 30px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } */
+
+        .nose-mouth {
+            width: 135px;
+            height: 100px;
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .nose-mouth::before {
+            content: "";
+            width: 40px;
+            height: 30px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .nose-mouth::after {
+            content: "";
+            width: 80px;
+            height: 30px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .red {
+            width: 50px;
+            height: 50px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+        }
+
+        .red-right {
+            width: 50px;
+            height: 50px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: 0%;
+
+
+        }
+
+        .v-mark {
+            width: 250px;
+            height: 60px;
+            /* background: black; */
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .v-mark::before {
+            content: "";
+            width: 75px;
+            height: 25px;
+            background: white;
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            transform: skew(20deg)rotate(30deg);
+
+
+        }
+
+        .v-mark::after {
+            content: "";
+            width: 75px;
+            height: 25px;
+            background: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: skew(-20deg)rotate(-30deg);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bear">
+        <div class="ear"></div>
+        <div class="ear-left"></div>
+        <div class="ear-right"></div>
+        <div class="eye-left"></div>
+        <div class="eye-right"></div>
+        <div class="nose-mouth">
+            <div class="nose"></div>
+            <div class="mouth"></div>
+        </div>
+        <div class="red"></div>
+        <div class="red-right"></div>
+        <div class="v-mark"></div>
+    </div>
+</body>
+
+</html>

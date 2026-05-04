@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 250px;
+            background: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .needle {
+            width: 25px;
+            height: 0.5px;
+            background: black;
+            position: absolute;
+            top: 50%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+        }
+
+        .tube::before {
+            content: "";
+            width: 30px;
+            height: 35px;
+            background: linear-gradient(#fff, #dbd9d9);
+            border: 1px solid #777;
+            border-radius: 0% 10% 10% 0%;
+            position: absolute;
+            top: 50%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* .front-needle {
+            width: 110px;
+            height: 50px;
+            border: 1px solid #777;
+            position: absolute;
+            top: 40%;
+            left: 60%;
+
+            transform: (-50%, -50%);
+            background: linear-gradient(90deg, transparent 85%, black 99%) repeat-x left top/ 10px 10px,
+                linear-gradient(#efeb78, #efe388);
+        } */
+
+        .front-needle::before {
+            content: "";
+            width: 110px;
+            height: 50px;
+            border: 1px solid #777;
+            position: absolute;
+            top: 40%;
+            left: 60%;
+
+            transform: (-50%, -50%);
+            background: linear-gradient(90deg, transparent 85%, black 99%) repeat-x left top/ 10px 10px,
+                linear-gradient(#efeb78, #efe388);
+        }
+
+        .front-needle::after {
+            content: "";
+            width: 110px;
+            height: 50px;
+            border: 1px solid #777;
+            position: absolute;
+            top: 40%;
+            right: 45%;
+
+            transform: (-50%, -50%);
+            background: linear-gradient(90deg, transparent 85%, black 99%) repeat-x left top/ 10px 10px,
+                linear-gradient(#fff, #dbd9d9);
+        }
+
+
+        .black {
+            width: 25px;
+            height: 50px;
+            background: black;
+            border: 1px solid;
+            position: absolute;
+            top: 40%;
+            left: 55%;
+
+        }
+
+        .tube::after {
+            content: "";
+            width: 30px;
+            height: 35px;
+            background: linear-gradient(#fff, #dbd9d9);
+            border: 1px solid #777;
+
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .tail {
+
+            width: 20px;
+            height: 50px;
+            background: linear-gradient(#fff, #dbd9d9);
+            border: 1px solid #777;
+            border-radius: 10% 10% 10% 10%;
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+        }
+
+        .text {
+            display: block;
+            color: #777;
+            position: absolute;
+            font-size: 10px;
+            top: 55%;
+            right: 53%;
+            z-index: 1;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="needle"></div>
+        <div class="black"></div>
+        <div class="tube">
+            <div class="text">Made in Taiwan</div>
+        </div>
+
+        <div class="front-needle"></div>
+        <div class="tail"></div>
+
+    </div>
+</body>
+
+</html>
